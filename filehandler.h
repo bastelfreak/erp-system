@@ -6,18 +6,14 @@ provides all needed functions for handling files
 
 #pragma once
 
+
 // Open specified file. Create if dosent exist
-bool open (string filepath);
-// Öffnen der Datei. Filepath gibt den Pfad der Datei an die geöffnet werden soll.
-
-
-// Create specified file
-bool create (string filepath);
-//Datei erstellen falls noch nicht vorhanden. Filepath gibt den pfad der zuerstellenden Datei.
+bool open (std::string filepath);
+// Oeffnen der Datei. Filepath gibt den Pfad der Datei an die geoeffnet werden soll.
 
 
 // Write the given line in the file
-bool writeLine (string line);
+bool writeLine (std::string line);
 //Schreiben des Strings in die Datei 
 
 
@@ -26,5 +22,6 @@ bool close  (void);
 //Datei schliesen
 
 
-string getLine (void);
+std::string getLine (void);
 //Einlesen der Datei in ein String
+

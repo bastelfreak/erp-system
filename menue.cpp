@@ -1,25 +1,52 @@
-/*
-Created by Meusel
-Responsible: Bennerscheid, Bost, Reuter
-provides three functions for menu stuff
+/* Created by Bennerscheid, Bost, Reuter
+Responsable Bennerscheid, Bost, Reuter
+provides three functions for menue stuff
 */
 
-#include "menue.h"
+#include <iostream>
+#pragma once
 
-//Das Menü wird über True/False gesteuert
-bool menue (void)
+using namespace std;
+
+int menue (void)
 {
+	int choice;
 
+	cout << " Please choose one of these menue points: " << endl;
+	cout << " (1) Statisticfuu " << endl;
+	cout << " (2) Create a new article " << endl;
+	cout << " (3) Article informations " << endl;
+	cout << " (4) Search " << endl;
+
+	cout << " Please enter your choice: ";
+	cin >> choice;
+
+	switch (choice) 
+	{
+	case 1: return 1;
+		break;
+	case 2: return 2;
+		break;
+	case 3: return 3;
+		break;
+	case 4: return 4;
+		break;
+
+	default:
+		do
+		{
+
+		cout << "Please choose a valid entry!: ";
+		cin >> choice;
+		
+		}while (choice > 4);
+
+		break;
+	}
+
+	
+	return choice;
+
+	
 }
 
-//Hier muss dem Unterprogramm das Array zum speichern der Dateien zur Verfügung gestellt werden, es muss nichts an das Hauptprogramm übergeben werden
-bool ArticleInput (array_blablubb)
-{
-
-}
-
-/*Kümmert sich um das Handling der verschiedenen Ausgabenmethoden*/
-bool ArticleOutput (void)
-{
-
-}
