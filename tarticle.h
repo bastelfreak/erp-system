@@ -3,7 +3,7 @@
 // defines a basic article struct
 struct TArticle
 {
-	int nummer;
-	char bezeichnung[256];
-	double preis;
+	int id;
+	char description[256];
+	double price;
 };
