@@ -5,6 +5,7 @@ mutliple functions to search for an article
 */
 
 #pragma once
+#include "string"
 
 void ArtikelNummerSuche(int ArtikelNummer); //we switch in this programm, when the user wants to search the ID number of the product
 void ArtikelNameSuche (string ArtikelName); //we switch in this programm, when the user wants to search the name of the product
