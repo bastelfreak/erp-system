@@ -1,7 +1,15 @@
+/*
+Created by: Abidi, Glehn, Schaefer
+Responsible: Abidi, Glehn, Schaefer
+provides functions for statistics
+*/
+
+
 #include <iostream>
 #include "statistics.h"
+#include "tarticle.h"
 
-using namespace std;
+
 
 int main()
 {
@@ -17,35 +25,35 @@ int main()
 	*/
 }
 
-int teuersterArtikel(TArtikel ZuSucheneArtikel[])
+int teuersterArtikel(TArticle ZuSucheneArtikel[]) // Programm für die Statistik des teuersten Artikel im Array 
 {
 
-	struct tartikelZwischenspeicher
+	struct tartikelZwischenspeicher // Zwischenspeicher für den Artikel mit dem höchsten Preis
 	{
 		int Artikelnummer;
 		char Bezeichnung;
 		double Preis;
 	};
 
-	tartikelZwischenspeicher tartikelZwischenspeicher;
-	int hoechsterPreis = 0.0;
+	tartikelZwischenspeicher tartikelZwischenspeicher; // Variable wird Initialisiert
+	int hoechsterPreis = 0;
 
 	for (int i = 1; i < 1000; i++)
 	{
-		if (TArtikel[i].preis >= hoechsterPreis)
+		if (ZuSucheneArtikel[i].preis >= hoechsterPreis) //Vergleicht den Wert "Preis" aus dem Array mit Wert in int hoechsterpreis
 		{
-			hoechsterPreis == TArtikel[i].preis;
-			tartikelZwischenspeicher == TArtikel[i];
+			hoechsterPreis == TArticle[i].preis;		//Überschreibt Wert in Variable mit höherem Wert
+			tartikelZwischenspeicher == TArtikel[i];	//Überschreibt Werte in tartikelZwischenspeicher
 		}
 	}
-
-	cout << "Der teuerste Artikel ist: " << tartikelZwischenspeicher.Artikelnummer << 
-		endl << tartikelZwischenspeicher.Bezeichnung << endl << tartikelZwischenspeicher.Preis;
+	//Ausgabe in Konsole
+  std::cout << "Der teuerste Artikel ist: " << tartikelZwischenspeicher.Artikelnummer << 
+		std::endl << tartikelZwischenspeicher.Bezeichnung << std::endl << tartikelZwischenspeicher.Preis;
 
 	return 0;
 }
 
-int guenstigsterArtikel(TArtikel ZuSuchendeArtikel[])
+int guenstigsterArtikel(TArticle ZuSuchendeArtikel[])
 {
 	
 	struct tartikelZwischenspeicher
@@ -56,31 +64,45 @@ int guenstigsterArtikel(TArtikel ZuSuchendeArtikel[])
 	};
 
 	tartikelZwischenspeicher tartikelZwischenspeicher;
-	int guenstigsterPreis = 0.0;
+	int guenstigsterPreis = 0;
 
 	for (int i = 1; i < 1000; i++)
 	{
-		if (TArtikel[i].preis <= guenstigsterPreis)
+		if (ZuSuchendeArtikel[i].preis <= guenstigsterPreis)
 		{
-			guenstigsterPreis == TArtikel[i].preis;
-			tartikelZwischenspeicher == TArtikel[i];
+			guenstigsterPreis = ZuSuchendeArtikel[i].preis;
+			tartikelZwischenspeicher = ZuSuchendeArtikel[i];
 		}
 	}
 
-	cout << "Der guenstigste Artikel ist: " << tartikelZwischenspeicher.Artikelnummer << 
-		endl << tartikelZwischenspeicher.Bezeichnung << endl << tartikelZwischenspeicher.Preis;
+  std::cout << "Der guenstigste Artikel ist: " << tartikelZwischenspeicher.Artikelnummer << 
+		std::endl << tartikelZwischenspeicher.Bezeichnung << std::endl << tartikelZwischenspeicher.Preis;
 
 	return 0;
 }
 
-int anzahlArtikel(TArtikel ZuSuchendeArtikel[])
+int anzahlArtikel(TArticle ZuSuchendeArtikel[])
 {
 
+		struct tartikelZwischenspeicher
+	{
+		int Artikelnummer;
+		char Bezeichnung;
+		double Preis;
+	};
+
+	tartikelZwischenspeicher tartikelZwischenspeicher;
+	int anzahl = 0;
+
+	for (int i = 1; i < 1000; i++)
+	{
+		if (ZuSuchendeArtikel[i].Artikelnummer != NULL)
+		{
+			 anzahl + 1;
+		}
+	}
+
+  std::cout << "Die Anzahl der Artikel ist: " << anzahl << std::endl;
+
+	return 0;
 }
-
-int durschschnittArtikel(TArtikel ZuSuchendeArtikel[])
-{
-
-}
-
-
