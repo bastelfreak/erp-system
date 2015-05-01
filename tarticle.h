@@ -1,7 +1,7 @@
 #pragma once
 
 // defines a basic article struct
-struct Tarticle
+struct TArticle
 {
 	int nummer;
 	char bezeichnung[256];

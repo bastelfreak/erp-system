@@ -5,14 +5,14 @@ provides all needed functions for handling files
 */
 
 #include "filehandler.h"
-#include <string>
+#include "tartikel.h"
 #include <fstream>
 #include <iostream>
 
 
 
 // Open specified file. Create if it doesn't exists
-bool open (std::string filepath)
+void open (std::string filepath)
 {
 	std::fstream file(filepath);
 
@@ -21,36 +21,57 @@ bool open (std::string filepath)
 	create (filepath);
 	}
 	*/
-	std::ofstream file(filepath);
 
 }
 
+/* writeLine("123|Kondome|5.00", "C:/Daten/Software/AlleArtikel.txt") */
+
 // Write the given line in the file
-bool writeLine (std::string line, std::string filepath)
+void writeLine (std::string line, std::string filepath)
 {
 	std::ofstream file;
 	file.open (filepath);
 
+	/* Format der hineingeschriebenen Daten Nummer|Bezeichnung|Preis */
 	if (file.is_open())
 	{
 		file << line << std::endl;
 	}
 	else
-		
-	std::cout << "File must be open!" << std::endl;
+	{	
+		std::cout << "File must be open!" << std::endl;
+	}
 
-	
 }
 
 // Close file 
-bool close  (std::string line, std::string filepath)
+void close  (std::string line, std::string filepath)
 {
 	std::ofstream file;
 	file.close();
 }
 
-std::string getLine (void)
+void getLine (std::string filepath)
 {
-
+	std::ifstream file(filepath);
+	if(!file){
+		std::cout << "Cannot open file.";
+	} else {
+		char str[255];
+		while(file){
+			file.getline(str, 255);      // Delimiter defaults to newlin
+			int i = 0;
+			while(str[i] != NULL)
+			{
+				if (str[i] == '|'){
+					std::cout << std::endl;
+				} else {
+					std::cout << str[i];
+				}
+				i++;
+			}
+		}
+		file.close();
+	}
 }
 
