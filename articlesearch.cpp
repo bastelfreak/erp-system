@@ -6,27 +6,16 @@ mutliple functions to search for an article
 
 #include <iostream>
 #include "articlesearch.h"
-#include "string"
 
-void ArtikelSuche ()
+void ArtikelSuche (TArticle MeineArtikel[])
 {
-	TArtikel MeineArtikel[1000];
+  //TArtikel MeineArtikel[1000];
 
 	int Auswahl1 = 0;
 	int ArtikelNummer = 0;
   std::string ArtikelName = "";
 	double ArtikelPreis = 0.0;
 
-	// Test-Array, kann gelöscht werden!
-	MeineArtikel[0].AName = "Schraube";
-	MeineArtikel[0].ANummer = 1;
-	MeineArtikel[0].APreis = 1.66;
-
-	MeineArtikel[1].AName = "Nagel";
-	MeineArtikel[1].ANummer = 2;
-	MeineArtikel[1].APreis = 0.39;
-
-	
 	//cout << " Bitte wählen Sie das Atribut, wonach Sie suchen möchten " <<endl;
   std::cout << " Please choose an Atribute which you want to search  " << std::endl;
   std::cout << " 1 for Articel Number" << std::endl;
@@ -54,11 +43,11 @@ void ArtikelSuche ()
 
 	for (int i=0; i<=1000;i++)
 	{ 
-		if ( MeineArtikel[i].ANummer == ArtikelNummer && ArtikelNummer != 0 || MeineArtikel[i].AName == ArtikelName && ArtikelName != "" || MeineArtikel[i].APreis == ArtikelPreis  && ArtikelPreis != 0)
+		if ( MeineArtikel[i].id == ArtikelNummer && ArtikelNummer != 0 || MeineArtikel[i].name == ArtikelName && ArtikelName != "" || MeineArtikel[i].price == ArtikelPreis  && ArtikelPreis != 0)
 		{
-      std::cout << "Articel Number: " << MeineArtikel[i].ANummer << std::endl;
-      std::cout << "Articel Name:   " <<MeineArtikel[i].AName << std::endl;
-      std::cout << "Articel Price:  " << MeineArtikel[i].APreis << "Euro" << std::endl;
+      std::cout << "Articel Number: " << MeineArtikel[i].id << std::endl;
+      std::cout << "Articel Name:   " <<MeineArtikel[i].name << std::endl;
+      std::cout << "Articel Price:  " << MeineArtikel[i].price << "Euro" << std::endl;
 		}
 	}
 };
