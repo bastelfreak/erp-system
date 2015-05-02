@@ -1,12 +1,11 @@
 /*
 Created by Meusel
-Responsible: Meusel?
+Responsible: Meusel ¯\(°_°)/¯
 handles all stuff
 */
 
 // include global stuff
 #include <iostream>
-#include <string>
 
 // include our own stuff
 #include "articlesearch.h"
@@ -16,11 +15,10 @@ handles all stuff
 #include "tarticle.h"
 
 
-void main (void)
+int main (void)
 {	
 	std::string db_path = "/path/to/file";
 	bool open_database = false;
-	open_database = open(db_path);
 	bool exit = false;
 	char input;
 
@@ -47,4 +45,5 @@ void main (void)
 			}
 		}
 	}
+  return 0;
 }
