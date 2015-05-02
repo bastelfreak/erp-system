@@ -4,22 +4,20 @@ provides three functions for menue stuff
 */
 
 #include <iostream>
-#pragma once
-
-using namespace std;
+#include "menue.h"
 
 int menue (void)
 {
 	int choice;
 
-	cout << " Please choose one of these menue points: " << endl;
-	cout << " (1) Statisticfuu " << endl;
-	cout << " (2) Create a new article " << endl;
-	cout << " (3) Article informations " << endl;
-	cout << " (4) Search " << endl;
+  std::cout << " Please choose one of these menue points: " << std::endl;
+  std::cout << " (1) Statisticfuu " << std::endl;
+  std::cout << " (2) Create a new article " << std::endl;
+  std::cout << " (3) Article informations " << std::endl;
+  std::cout << " (4) Search " << std::endl;
 
-	cout << " Please enter your choice: ";
-	cin >> choice;
+  std::cout << " Please enter your choice: ";
+  std::cin >> choice;
 
 	switch (choice) 
 	{
@@ -36,17 +34,13 @@ int menue (void)
 		do
 		{
 
-		cout << "Please choose a valid entry!: ";
-		cin >> choice;
+      std::cout << "Please choose a valid entry!: ";
+      std::cin >> choice;
 		
 		}while (choice > 4);
 
 		break;
 	}
-
-	
-	return choice;
-
-	
+	return choice;	
 }
 

@@ -1,3 +1,10 @@
+/*
+Created by Meusel
+Responsible: Bennerscheid, Bost, Reuter
+provides three functions for menue stuff
+*/
+
+#pragma once
 
 int menue (void);
 //Das Menü wird über Zahlen ausgewählt 
