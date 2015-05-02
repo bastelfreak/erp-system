@@ -4,6 +4,6 @@
 struct TArticle
 {
 	int id;
-	char description[256];
+	char name[256];
 	double price;
 };
