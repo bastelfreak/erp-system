@@ -50,7 +50,7 @@ void ArtikelSuche (TArticle MeineArtikel[])
       std::cout << "Articel Price:  " << MeineArtikel[i].price << "Euro" << std::endl;
 		}
 	}
-};
+}
 
 
 //we switch in this programm, when the user wants to search the ID number of the product
