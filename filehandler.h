@@ -6,10 +6,10 @@ provides all needed functions for handling files
 
 #pragma once
 #include <string>
-
+#include <fstream>
 
 // Open specified file. Create if dosent exist
-void open (std::string filepath);
+std::fstream *open (std::string filepath);
 // Oeffnen der Datei. Filepath gibt den Pfad der Datei an die geoeffnet werden soll.
 
 

@@ -5,23 +5,16 @@ provides all needed functions for handling files
 */
 
 #include "filehandler.h"
-#include "tarticle.h"
-#include <fstream>
 #include <iostream>
-
+#include "tarticle.h"
 
 
 // Open specified file. Create if it doesn't exists
-void open (std::string filepath)
+std::fstream *open (std::string filepath)
 {
-	std::fstream file(filepath);
-
-	/*if (!file.good()) 
-	{
-	create (filepath);
-	}
-	*/
-
+  //std::fstream file(filepath);
+  std::fstream *file = new std::fstream();
+  return file;
 }
 
 /* writeLine("123|Kondome|5.00", "C:/Daten/Software/AlleArtikel.txt") */
