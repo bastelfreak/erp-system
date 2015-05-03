@@ -54,7 +54,7 @@ void getLine (std::string filepath)
 		while(file){
 			file.getline(str, 255);      // Delimiter defaults to newlin
 			int i = 0;
-			while(str[i] != NULL)
+			while(str[i] != '\0')
 			{
 				if (str[i] == '|'){
 					std::cout << std::endl;
