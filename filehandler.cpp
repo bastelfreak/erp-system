@@ -83,17 +83,17 @@ void getData(std::fstream& file, TArticle AlleArtikel[1000])
 		int n;
 		while (!file.eof()){
 			file.getline(cText, sizeof(cText));
-			pch = strtok(cText, ";");
+			pch = std::strtok(cText, ";");
 			n = 1;
 			while (pch != NULL)
 			{
 				if (n == 1)
 					AlleArtikel[i].id = atoi(pch);
 				else if (n == 2)
-					strcpy(AlleArtikel[i].name, pch);
+					std::strcpy(AlleArtikel[i].name, pch);
 				else if (n == 3)
 					AlleArtikel[i].price = atof(pch);
-				pch = strtok(NULL, ";");
+				pch = std::strtok(NULL, ";");
 				n++;
 			}
 			i++;
