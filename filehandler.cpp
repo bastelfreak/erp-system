@@ -5,7 +5,7 @@ provides all needed functions for handling files
 */
 
 #include "filehandler.h"
-#include "tartikel.h"
+#include "tarticle.h"
 #include <fstream>
 #include <iostream>
 
