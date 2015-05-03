@@ -6,63 +6,97 @@ provides all needed functions for handling files
 
 #include "filehandler.h"
 #include <iostream>
-#include "tarticle.h"
 
+// Check if filepath exists and can be open
+bool checkFileExistence(std::string& filepath)
+{
+	std::fstream f(filepath.c_str());
+	return f.is_open();
+}
+
+// Which file you want to open if no file exists?
+std::string getFileName()
+{
+	std::string filename;
+	std::cout << "Please enter in the name of the file you'd like to open: ";
+	std::cin >> filename;
+	return filename;
+}
 
 // Open specified file. Create if it doesn't exists
-std::fstream *open (std::string filepath)
+void open(std::string filepath, std::fstream& file)
 {
-  //std::fstream file(filepath);
-  std::fstream *file = new std::fstream();
-  file->open(filepath);
-  return file;
+	bool file_exists = checkFileExistence(filepath);
+	if (!file_exists)
+	{
+		std::cout << "File " << filepath << " not found.\n";
+		filepath = getFileName(); //Not found
+		std::ofstream dummy(filepath.c_str());
+		if (!dummy.is_open()) {
+			std::cerr << "Could not create file.\n";
+			return;
+		}
+		std::cout << "File created.\n";
+	}
+	else
+	{
+		file.open(filepath.c_str());
+	}
 }
 
 /* writeLine("123;Kondome;5.00", "C:/Daten/Software/AlleArtikel.txt") */
 
 // Write the given line in the file
-void writeLine (std::string line, std::string filepath)
+void writeLine(std::string line, std::fstream& file)
 {
-	std::ofstream file;
-	file.open (filepath);
-
 	/* Format der hineingeschriebenen Daten Nummer;Bezeichnung;Preis */
 	if (file.is_open())
 	{
 		file << line << std::endl;
 	}
 	else
-	{	
+	{
 		std::cout << "File must be open!" << std::endl;
 	}
 
 }
 
 // Close file 
-void close  (std::string line, std::string filepath)
+void close(std::fstream& file)
 {
-	std::ofstream file;
 	file.close();
 }
 
-void getLine (std::fstream *file)
+
+// Read Data into Struct 
+void getData(std::fstream& file, TArticle AlleArtikel[1000])
 {
-	if(!file){
-		std::cout << "Cannot open file.";
-	} else {
-		char str[255];
-		while(file){
-			file->getline(str, 255);      // Delimiter defaults to newlin
-			int i = 0;
-			while(str[i] != '\0')
+	if (!file.is_open())
+	{
+		std::cout << "File must be open!" << std::endl;
+	}
+	else 
+	{
+		char cText[256];
+		char * pch;
+		int i = 0;
+		int n;
+		while (!file.eof()){
+			file.getline(cText, sizeof(cText));
+			pch = strtok(cText, ";");
+			n = 1;
+			while (pch != NULL)
 			{
-				if (str[i] == ';'){
-					std::cout << std::endl;
-				} else {
-					std::cout << str[i];
-				}
-				i++;
+				if (n == 1)
+					AlleArtikel[i].id = atoi(pch);
+				else if (n == 2)
+					strcpy(AlleArtikel[i].name, pch);
+				else if (n == 3)
+					AlleArtikel[i].price = atof(pch);
+				pch = strtok(NULL, ";");
+				n++;
 			}
+			i++;
 		}
 	}
 }
