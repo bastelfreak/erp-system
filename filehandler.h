@@ -14,7 +14,7 @@ std::fstream *open (std::string filepath);
 
 
 // Write the given line in the file
-void writeLine (std::string line);
+void writeLine (std::fstream *file);
 //Schreiben des Strings in die Datei 
 
 
@@ -23,6 +23,6 @@ void close  (void);
 //Datei schliesen
 
 
-void getLine (std::string filepath);
+void getLine (std::fstream *file);
 //Einlesen der Datei in ein String
 
