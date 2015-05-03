@@ -5,6 +5,7 @@ provides all needed functions for handling files
 */
 
 #include "filehandler.h"
+#include <string.h>
 #include <iostream>
 
 // Check if filepath exists and can be open
@@ -83,17 +84,17 @@ void getData(std::fstream& file, TArticle AlleArtikel[1000])
 		int n;
 		while (!file.eof()){
 			file.getline(cText, sizeof(cText));
-			pch = std::strtok(cText, ";");
+			pch = strtok(cText, ";");
 			n = 1;
 			while (pch != NULL)
 			{
 				if (n == 1)
 					AlleArtikel[i].id = atoi(pch);
 				else if (n == 2)
-					std::strcpy(AlleArtikel[i].name, pch);
+					strcpy(AlleArtikel[i].name, pch);
 				else if (n == 3)
 					AlleArtikel[i].price = atof(pch);
-				pch = std::strtok(NULL, ";");
+				pch = strtok(NULL, ";");
 				n++;
 			}
 			i++;
