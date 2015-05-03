@@ -1,5 +1,5 @@
 Compile this stuff:
 
 ```
-g++ -g -Wall -pg -std=c++11 *.cpp
+g++ -g -Wall -Werror -pg -std=c++11 *.cpp -o erp
 ```
