@@ -27,7 +27,7 @@ int main (void)
   std::cout << "Hey, I'm your crazy ERP-System, what do you want to do?\n";
 	while(!exit)
 	{
-		menue(AlleArtikel[]);
+		menue(AlleArtikel);
 		switch(methodNumber)
 		{
 			case 1: break;

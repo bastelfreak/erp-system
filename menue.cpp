@@ -3,8 +3,14 @@ Responsable Bennerscheid, Bost, Reuter
 provides three functions for menue stuff
 */
 
+// include global stuff
 #include <iostream>
+
+// include our own stuff
+#include "articlesearch.h"
+#include "filehandler.h"
 #include "menue.h"
+#include "statistics.h"
 #include "tarticle.h"
 
 int menue (TArticle AlleArtikel[])
@@ -27,13 +33,13 @@ int menue (TArticle AlleArtikel[])
 
     switch (choice) 
     {
-      case '1': teuersterArtikel(AlleArtikel[]); break;
-      case '2': guenstigsterArtikel(AlleArtikel[]); break;
-      case '3': anzahlArtikel(AlleArtikel[]); break;
-      case '4': ArtikelSuche(AlleArtikel[]); break;
-      case '5': ArtikelNummerSuche(AlleArtikel[]); break;
-      case '6': ArtikelNameSuche(AlleArtikel[]); break;
-      case '7' ArtikelPreisSuche(AlleArtikel[]); break;
+      case '1': teuersterArtikel(AlleArtikel); break;
+      case '2': guenstigsterArtikel(AlleArtikel); break;
+      case '3': anzahlArtikel(AlleArtikel); break;
+      case '4': ArtikelSuche(AlleArtikel); break;
+      case '5': ArtikelNummerSuche(AlleArtikel); break;
+      case '6': ArtikelNameSuche(AlleArtikel); break;
+      case '7': ArtikelPreisSuche(AlleArtikel); break;
       default: std::cout << "Please choose a valid entry!\n";
         break;
     }

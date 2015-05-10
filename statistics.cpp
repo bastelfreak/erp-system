@@ -6,6 +6,7 @@ provides functions for statistics
 
 #include <iostream>
 #include "statistics.h"
+#include "tarticle.h"
 
 int teuersterArtikel(TArticle AlleArtikel[]) // Programm für die Statistik des teuersten Artikel im Array 
 {
