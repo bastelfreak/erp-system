@@ -22,9 +22,6 @@ int menue (TArticle AlleArtikel[])
   std::cout << " (2) guenstigsterArtikel " << std::endl;
   std::cout << " (3) anzahlArtikel " << std::endl;
   std::cout << " (4) ArtikelSuche " << std::endl;
-  std::cout << " (4) ArtikelNummerSuche " << std::endl;
-  std::cout << " (4) ArtikelNameSuche " << std::endl;
-  std::cout << " (4) ArtikelPreisSuche " << std::endl;
 
   while (true)
   {
@@ -37,11 +34,7 @@ int menue (TArticle AlleArtikel[])
       case '2': guenstigsterArtikel(AlleArtikel); break;
       case '3': anzahlArtikel(AlleArtikel); break;
       case '4': ArtikelSuche(AlleArtikel); break;
-      case '5': ArtikelNummerSuche(AlleArtikel); break;
-      case '6': ArtikelNameSuche(AlleArtikel); break;
-      case '7': ArtikelPreisSuche(AlleArtikel); break;
-      default: std::cout << "Please choose a valid entry!\n";
-        break;
+      default: std::cout << "Please choose a valid entry!\n"; return 0; break;
     }
 
   }

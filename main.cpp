@@ -28,14 +28,6 @@ int main (void)
 	while(!exit)
 	{
 		menue(AlleArtikel);
-		switch(methodNumber)
-		{
-			case 1: break;
-			case 2: break;
-			case 3: break;
-			case 4: break;
-			default: break;
-		}
 		std::cout << "Do you want to exit the Tool(y)?" << "\n";
 		std::cin >> input;
 		if(input == 'y' || input == 'Y' || input == 'z' || input == 'Z')
