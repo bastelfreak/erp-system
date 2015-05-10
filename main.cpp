@@ -17,16 +17,17 @@ handles all stuff
 
 int main (void)
 {
-	TArticle Artikel[1000];
+	TArticle AlleArtikel[1000];
 	std::string db_path = "database.csv";
 	bool exit = false;
 	char input;
 	std::fstream database;
 	open(db_path, database);
-	getData(database, Artikel);
+	getData(database, AlleArtikel);
+  std::cout << "Hey, I'm your crazy ERP-System, what do you want to do?\n";
 	while(!exit)
 	{
-		int methodNumber = menue();
+		menue(AlleArtikel[]);
 		switch(methodNumber)
 		{
 			case 1: break;

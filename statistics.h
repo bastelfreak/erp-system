@@ -8,6 +8,6 @@ provides functions for statistics
 
 #include "tarticle.h"
 
-int teuersterArtikel(TArticle ZuSuchendeArtikel[]);		// Findet den teuersten Artikel
-int guenstigsterArtikel(TArticle ZuSuchendeArtikel[]);	// Findet den günstigsten Artikel
-int anzahlArtikel(TArticle ZuSuchendeArtikel[]);		// Findet die Anzahl der Artikel
+int teuersterArtikel(TArticle AlleArtikel[]);		// Findet den teuersten Artikel
+int guenstigsterArtikel(TArticle AlleArtikel[]);	// Findet den günstigsten Artikel
+int anzahlArtikel(TArticle AlleArtikel[]);		// Findet die Anzahl der Artikel

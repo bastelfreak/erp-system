@@ -5,6 +5,7 @@ provides three functions for menue stuff
 
 #include <iostream>
 #include "menue.h"
+#include "tarticle.h"
 
 int menue (TArticle AlleArtikel[])
 {

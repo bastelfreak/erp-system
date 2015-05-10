@@ -5,6 +5,7 @@ provides three functions for menue stuff
 */
 
 #pragma once
+#include "tarticle.h"
 
 int menue (TArticle AlleArtikel[]);
 //Das Menü wird über Zahlen ausgewählt 
