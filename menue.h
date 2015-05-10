@@ -6,7 +6,7 @@ provides three functions for menue stuff
 
 #pragma once
 
-int menue (void);
+int menue (TArticle AlleArtikel[]);
 //Das Menü wird über Zahlen ausgewählt 
 //bool ArticleInput (array_blablubb);
 /*Hier muss dem Unterprogramm das Array zum speichern der Dateien zur Verfügung gestellt werden,

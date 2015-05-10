@@ -6,41 +6,38 @@ provides three functions for menue stuff
 #include <iostream>
 #include "menue.h"
 
-int menue (void)
+int menue (TArticle AlleArtikel[])
 {
-	int choice;
+	char choice;
 
   std::cout << " Please choose one of these menue points: " << std::endl;
-  std::cout << " (1) Statisticfuu " << std::endl;
-  std::cout << " (2) Create a new article " << std::endl;
-  std::cout << " (3) Article informations " << std::endl;
-  std::cout << " (4) Search " << std::endl;
+  std::cout << " (1) teuersterArtikel " << std::endl;
+  std::cout << " (2) guenstigsterArtikel " << std::endl;
+  std::cout << " (3) anzahlArtikel " << std::endl;
+  std::cout << " (4) ArtikelSuche " << std::endl;
+  std::cout << " (4) ArtikelNummerSuche " << std::endl;
+  std::cout << " (4) ArtikelNameSuche " << std::endl;
+  std::cout << " (4) ArtikelPreisSuche " << std::endl;
 
-  std::cout << " Please enter your choice: ";
-  std::cin >> choice;
+  while (true)
+  {
+    std::cout << " Please enter your choice: ";
+    std::cin >> choice;
 
-	switch (choice) 
-	{
-	case 1: return 1;
-		break;
-	case 2: return 2;
-		break;
-	case 3: return 3;
-		break;
-	case 4: return 4;
-		break;
+    switch (choice) 
+    {
+      case '1': teuersterArtikel(AlleArtikel[]); break;
+      case '2': guenstigsterArtikel(AlleArtikel[]); break;
+      case '3': anzahlArtikel(AlleArtikel[]); break;
+      case '4': ArtikelSuche(AlleArtikel[]); break;
+      case '5': ArtikelNummerSuche(AlleArtikel[]); break;
+      case '6': ArtikelNameSuche(AlleArtikel[]); break;
+      case '7' ArtikelPreisSuche(AlleArtikel[]); break;
+      default: std::cout << "Please choose a valid entry!\n";
+        break;
+    }
 
-	default:
-		do
-		{
-
-      std::cout << "Please choose a valid entry!: ";
-      std::cin >> choice;
-		
-		}while (choice > 4);
-
-		break;
-	}
-	return choice;	
+  }
+  return 0;
 }
 
