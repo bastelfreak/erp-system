@@ -1,5 +1,522 @@
 1;Kondome;5.00
 2;Fleisch;170.00
-3;Lutscher;0,50
-4;Schreibtisch;320.72
-5;TV;1199.98
+3;Lutscher;0.50
+4;Schreibtisch;320.00
+5;TV;1199.00
+6;Orangen;5.13
+7;Äpfel;6.07
+8;Bananen;8.99
+9;Blattsalat;1.98
+10;Tomaten;7.14
+11;Kürbis;6.54
+12;Sellerie;7.05
+13;Gurken;5.71
+14;Pilze;1.72
+15;Milch ;6.57
+16;Käse;7.26
+17;Eier;6.59
+18;Quark;6.79
+19;Saure Sahne;0.29
+20;Joghurt;0.38
+21;Rindfleisch;0.96
+22;Geflügel;7.23
+23;Schinken;1.95
+24;Meeresfrüchte;7.67
+25;Belag;3.32
+26;Mineralwasser;8.53
+27;Saft;7.21
+28;Kaffee;2.13
+29;Tee;0.81
+30;Wasser;1.20
+31;Teigwaren;6.37
+32;Reis;5.17
+33;Dosennahrung;6.96
+34;Müsli;8.01
+35;Brot;1.74
+36;Bagels;8.20
+37;Muffins;0.21
+38;Kuchen;7.11
+39;Chips;6.60
+40;Brezeln;0.06
+41;Eis;9.36
+42;Cookies;6.26
+43;Papierteller;6.24
+44;Servietten;1.27
+45;Müllbeutel;4.27
+46;Waschmittel;6.48
+47;Ananassaft;0.04
+48;Anistee;6.94
+49;Apfelfruchtsaftgetränk;8.86
+50;Apfelsaft, grüner Apfel;8.05
+51;Apfelsaft, roter Apfel;5.17
+52;Apfelschorle;5.65
+53;Aronia-Nektar, (Schwarze Eberesche, Apfelbeeren);3.88
+54;Bananensaft (Muttersaft);5.25
+55;Bier, Pils, alkoholfrei;8.56
+56;Birnennektar;4.74
+57;Birnensaft;5.56
+58;Bitter Lemon (Bitterlimonade);8.69
+59;Brennnesseltee;2.52
+60;Brombeersaft (Muttersaft);0.20
+61;Brottrunk;1.46
+62;Bubble Tea;2.93
+63;Cappuccino (ohne Zucker);9.91
+64;Chai Latte (Chaitee mit Milch);4.87
+65;Cola-Mixgetränk, Spezi (Cola + Limonade);7.26
+66;"Colagetränk, kalorienarm, ""light""";1.80
+67;Colagetränk;3.98
+68;Diätnektar mit Süßstoff;9.68
+69;Dinkelmilch (Dinkeldrink);4.35
+70;Eistee (Eis-Tee, Ice tea);7.14
+71;"Eiweiß-Shake, Protein-Shake, Eiweiß-Drink (Diätmittel; Durchschnittswerte)";9.28
+72;Energie Drink;4.67
+73;Energie Drink light zuckerfrei;6.66
+74;Espresso, schwarz;4.12
+75;Fencheltee;4.37
+76;Fruchtsaftgetränke aus Beerenobst;3.65
+77;Fruchtsaftgetränke aus Kernobst;9.05
+78;Fruchtsaftgetränke aus Steinobst;7.83
+79;Fruchtsaftgetränke aus Traubensaft;3.56
+80;Fruchtsaftgetränke aus Zitrusfrüchten;0.65
+81;Gemüsesaft;8.76
+82;Ginger Ale (Ingwerlimonade);5.33
+83;Grapefruitsaft, Pampelmusensaft;2.44
+84;Gurkensaft;8.84
+85;Hafermilch (Haferdrink);1.19
+86;Hagebuttentee;9.41
+87;Himbeersaft;5.72
+88;"Holundersaft, Holunderbeersaft, ""Fliederbeersaft"" (mit 2% Säure)";3.05
+89;Ingwertee;4.04
+90;Johannisbeernektar;2.24
+91;Johannisbeersaft;3.88
+92;Kaffee (Instantkaffee, Pulverkaffee), schwarz (fertig zubereitet);5.65
+93;Kaffee mit Milch (Milchkaffee);6.31
+94;Kaffee-Ersatz, schwarz;1.93
+95;Kaffee, schwarz;3.95
+96;Kamillentee;3.94
+97;Kinder-Glühwein (alkoholfrei, dennoch nicht empfehlenswert!);2.43
+98;Kinderpunsch (alkoholfrei, dennoch nicht empfehlenswert!);4.12
+99;Kirschsaft;1.54
+100;Kokosmilch, Kokossaft, Kokosnussmilch, Kokosnusssaft;4.01
+101;Kombucha-Gärgetränk (Teepilz);8.15
+102;Kranbeerensaft light, Cranberrysaft light, Moosbeerensaft light;2.32
+103;Kranbeerensaft, Cranberrysaft, Moosbeerensaft;9.64
+104;Kümmeltee;1.18
+105;Latte Macchiato (Milchkaffee, Cafe Latte, Cafe au lait, Kaffee verkehrt, Schale, Cafe con leche, Cafe cortado);8.86
+106;Limonade, Brause, Sprudel, Kracherl (Zitronenlimonade, Orangenlimonade, Kräuterlimonade);6.45
+107;"Limonade, kalorienarm, ""light"", Kracherl";1.34
+108;Limonensaft, Limettensaft pur;2.23
+109;Lindenblütentee;4.80
+110;Lupinenkaffee, Kaffeeersatz, schwarz;9.93
+111;Malventee, Hisbiscustee;1.96
+112;Malzbrause, Fassbrause;6.57
+113;Malzkaffee mit Milch;2.08
+114;Malzkaffee, schwarz;0.18
+115;Malztrunk (Malzbier);6.41
+116;Mandelmilch (Mandeldrink);2.31
+117;Lebensmittel-Nährwerte (pro 100 g);8.92
+118;Mangosaft;0.29
+119;Milchmixgetränk, Milkshake, Milchshake, Milchdrink, Milchgetränk (mit Süßstoff);2.14
+120;Milchmixgetränk, Milkshake, Milchshake, Milchdrink, Milchgetränk (zuckerhaltig);2.46
+121;Mineralwasser, Sprudelwasser ohne Geschmack;8.12
+122;Möhrensaft (Karottensaft, Mohrrübensaft, Rüblisaft, Rüeblisaft);0.81
+123;Morasaft 50%ig, Andenbrombeere, Andenbeere (Rubus glaucus);7.00
+124;Multivitamin-Nektar (Multi-Vitamin-Nektar, Multivitaminnektar);7.62
+125;Multivitamin-Saft (Multi-Vitamin-Saft, Multivitaminsaft);4.38
+126;Orangensaft (O-Saft);8.26
+127;Orangensaftnektar;5.25
+128;Orangensaftnektar mit Süßstoff;2.54
+129;Pfefferminztee;0.04
+130;Reismilch (Reisdrink);9.28
+131;Rosenwasser;3.16
+132;Rotbuschtee, Roibostee, Rooibostee;8.79
+133;Salbeitee;2.44
+134;Sanddornsaft, Sandbeerensaft, Roter Schlehensaft;8.42
+135;Sauerkirschsaft;1.78
+136;Sauerkrautsaft;3.72
+137;Schwarzer Johannisbeersaft;5.07
+138;Sojamilch (Soyamilch);1.12
+139;Tee, Früchtetee;6.37
+140;Tee, grün, ohne Zucker (Grüner Tee, Grüntee);2.12
+141;Tee, Kräutertee;2.76
+142;Tee, Mate grün /geröstet;6.14
+143;Tee, schwarz, aromatisiert, ohne Zucker (Schwarzer Tee, Schwarztee, Earl Grey, Black Currant usw.);8.58
+144;Tee, schwarz, ohne Zucker (Schwarzer Tee, Schwarztee);9.64
+145;Tee, weiß, ohne Zucker (Weißer Tee, Weißtee);0.07
+146;Thymiantee;3.67
+147;Tomatensaft;9.41
+148;Tonic Water;5.92
+149;Traubensaft;0.36
+150;Wasser, Quellwasser, Leitungswasser, Stilles Wasser;2.72
+151;Weißwein, lieblich, alkoholfrei;2.65
+152;Weizenbier alkoholfrei (Weiße, Weißbier, Hefeweizenbier, Hefeweißbier);1.56
+153;Zitronensaft;5.01
+154;Zitrussaftgetränk;7.48
+155;Blockschokolade, Backschokolade, Kochschokolade;0.71
+156;Brausepulver (Himbeere, Orange, Waldmeister, Zitrone, 1 Tütchen etwa 6 Gramm, also ca. 20 kcal);1.84
+157;Brausewürfel, Brausebrocken, Brausetabletten (Himbeere, Orange, Waldmeister, Zitrone, 1 Tütchen etwa 6 Gramm, also ca. 20 kcal);0.62
+158;Carobe, Karobe, Johannisbrotbohnen, Johannisbrotkernmehl, Johannisbrotmehl, Karobpulver, Karobmehl (Kakao-Alternative);2.19
+159;Diätschokolade, Diät-Vollmilchschokolade, Diabetikerschokolade (mit Aspartam);0.09
+160;Diätschokolade, Diät-Vollmilchschokolade, Diabetikerschokolade (mit Fruchtzucker);7.20
+161;Dominosteine;4.66
+162;Edelbitterschokolade, schwarze Schokolade, dunkle Schokolade, Zartbitter (mit mind. 85% Kakao);7.81
+163;Eisschokolade, Eiskonfekt (Schokolade, die im Kühlschrank gekühlt wird, meist in Portionen);6.29
+164;Erdnussriegel (Erdnuss-Riegel);4.70
+165;Frucht Bonbons, Lutscher, Klümpchen;2.68
+166;Frucht-Toffee (Kaubonbon);3.17
+167;Früchtebrot;8.43
+168;Fruchtgummi, Colafläschchen, Fruchtgummischlangen, Fruchtgummitaler;0.80
+169;Fruchtschnitten;5.75
+170;Gebrannte Erdnüsse, dragierte Erdnüsse;0.75
+171;Gebrannte Mandeln, dragierte Mandeln;5.35
+172;Gummibärchen (Gummibären, Gummibärli);5.91
+173;Halva;9.32
+174;Hartkaramell Bonbons;3.59
+175;Haselnuss-Tafeln (Haselnusstafeln);6.82
+176;Kakaogetränkpulver, Trinkschokoladenpulver;5.07
+177;Kakaopulver, entölt;0.67
+178;Karamell-Sahne-Toffee, Weichkaramell, Sahnekaramell (Kaubonbon);2.58
+179;Kaugummi;5.80
+180;Kaugummi ohne Zucker;4.44
+181;Keksriegel (Keks-Riegel);1.03
+182;Kinderschokolade;9.88
+183;Lakritzen, Lakritzschnecken;6.10
+184;Lokum, Lukum, Turkish Delight (rahat-lokum, türkische Süßigkeit);4.44
+185;Lebensmittel-Nährwerte (pro 100 g);7.65
+186;Luftschokolade (vollmilch);7.34
+187;Marshmallows, Mäusespeck;2.46
+188;Marzipan, Edelmarzipan;9.89
+189;Marzipanbrot, Edelmarzipanbrot;9.06
+190;Marzipankartoffeln, Edelmarzipankartoffeln;7.50
+191;Milchschnitte;4.59
+192;Mozart-Kugeln;0.92
+193;Müsliriegel;7.58
+194;Nougat;0.77
+195;Paradiesapfel, Liebesapfel (Apfel in Zuckerglasur, Jahrmarkt, Kirmes);4.35
+196;Pfefferminzbonbons, Eukalyptusbonbons;3.45
+197;Pfefferminzschokolade (Täfelchen);7.99
+198;Puffmais, süß (Popcorn, Popkorn);9.98
+199;Puffmais, ungesüßt (Popcorn, Popkorn);8.19
+200;Puffreis, süß;2.50
+201;Puffreis, ungesüßt, Reistaler;2.67
+202;Reiscrispies;5.60
+203;Rumkugeln, Punschigel;2.15
+204;Sahne-Toffee, Weichkaramell, Sahnetoffee (Kaubonbons);2.21
+205;Schoko-Bananen, Schokoladenbananen (Bananen mit Schokoladenüberzug und Kokosflocken, Jahrmarkt, Kirmes);0.96
+206;Schoko-Sahne-Toffee, Weichkaramell, Schokosahnekaramell (Kaubonbons);2.06
+207;Schokokuss, Schaumkuss;9.46
+208;Schokolinsen;3.69
+209;Schokoriegel mit Karamell;6.60
+210;Schokoriegel;2.50
+211;Schwarze Herrenschokolade, Edelbitterschokolade, schwarze Schokolade (mit mind. 70% Kakao);6.76
+212;Sesam- mit Honig-Halva;2.34
+213;Studentenfutter (Nuss-Rosinen-Mischung);3.89
+214;Türkischer Honig, türkischer Nugat, weißer Nougat, orientalischer Nugat, holländischer Nugat;7.29
+215;Vollmilchschokolade mit Nuss (Haselnussschokolade, Haselnuss-Schokolade);0.10
+216;Vollmilchschokolade;8.18
+217;Weinbrandbohnen, Schnapspralinen;8.13
+218;Weingummis;4.68
+219;Weiße Schokolade;9.82
+220;Zartbitterschokolade mit Nüssen (Haselnussschokolade, Haselnuss-Schokolade);0.32
+221;Zartbitterschokolade;5.65
+222;Zuckerwatte, Spinnzucker (purer Zucker, Jahrmarkt, Kirmes);1.95
+223;Austernpilze;3.21
+224;Birkenpilze;8.08
+225;Boviste (Stäublinge);1.61
+226;Butterpilze;5.61
+227;Champignons (Egerlinge, Angerlinge) (Konserve);9.93
+228;Champignons (Egerlinge, Angerlinge);8.34
+229;Eierschwamm;2.20
+230;Gemeiner Riesenschirmling (Parasol);4.00
+231;Maitake, Klapperschwamm, Laubporling, Spatelhütiger Porling;4.90
+232;Milchlinge, z. B. Reizker;2.10
+233;Morcheln (eingeweicht);8.36
+234;Muh-Err-Pilze, Judasohren, Holunderschwamm, Wolkenohrenpilze (eingeweicht);1.25
+235;Pfifferlinge (Eierpilze, Eierschwammerln, Rehlinge);7.67
+236;Pfifferlinge, getrocknet (Eierpilze, Eierschwammerln, Rehlinge);5.00
+237;Reishi, glänzender Lackporling;7.81
+238;Rotkappe;3.94
+239;Shitake, Shijtake, Shiitake, getrocknet;6.48
+240;Steinpilze (Fichtensteinpilz, Bronzeröhrling bzw. Schwarzhütiger Steinpilz, Sommersteinpilz, Kiefernsteinpilz, Herrenpilze);0.03
+241;Steinpilze, getrocknet (Fichtensteinpilz, Bronzeröhrling bzw. Schwarzhütiger Steinpilz, Sommersteinpilz, Kiefernsteinpilz, Herrenpilze);5.86
+242;Täublinge;2.90
+243;Trüffeln, Trüffelpilze;6.67
+244;Aal (roh);1.40
+245;Anglerfisch, Lotte, Seeteufel (roh);9.35
+246;Barsch, Seebarsch, Flussbarsch (roh);4.46
+247;Buntbarsch, Tilapia (roh);7.37
+248;Flunder (roh);7.75
+249;Flusskrebse, ausgelöst (Krebsfleisch) (roh);7.78
+250;Forellen (Bachforellen) (roh);7.83
+251;Goldbrassen, Doraden (roh);2.90
+252;Goldmakrelen, tropische Dorade, Mahi-Maki, Dolphin-Fisch (Filet) (roh);5.26
+253;Hecht (roh);4.72
+254;Heilbutt, schwarz (roh);0.00
+255;Heilbutt, weiß (roh);8.71
+256;Heringe (roh);1.50
+257;Hoki (verwandt mit Seehecht) (roh);9.27
+258;Kabeljau (Dorsch) (roh);8.58
+259;Kabeljauleber (Dorschleber) (roh);7.46
+260;Karpfen (roh);8.42
+261;Knurrhahn, Drachenkopf (roh);3.49
+262;Lachsfilet, Wildlachsfilet (roh);6.51
+263;Lachsforelle, Regenbogenforellen (roh);7.04
+264;Makrelen (roh);7.43
+265;Pangasiusfilet (roh);0.60
+266;Red Snapper (roh);8.12
+267;Renke (Felchen) (roh);2.67
+268;Rotbarsch (Rotbarschfilet), Goldbarsch, Bergilt, Panzerbarsch (roh);7.51
+269;Rotzunge (Limande) (roh);9.61
+270;Sardellenfilets (Anchovis) (roh);1.91
+271;Sardinen (roh);7.06
+272;Schellfisch (roh);9.59
+273;Schleie (roh);2.84
+274;Lebensmittel-Nährwerte (pro 100 g);3.32
+275;Scholle (roh);1.81
+276;Schwertfisch (roh);0.29
+277;Seehecht (roh);2.16
+278;Seelachsfilet, Alaska, Alaska-Seelachsfilet (roh);9.95
+279;Seelachsfilet, Köhler, Blaufisch (roh);9.31
+280;Seesaibling, Bachsaibling (roh);2.37
+281;Seewolf, Steinbeißer, Katfisch (roh);8.35
+282;Seezunge (roh);1.18
+283;Steinbutt (roh);4.19
+284;Thunfisch (roh);1.53
+285;Victoriabarsch, Viktoriabarsch, Nilbarsch (roh);1.01
+286;Weißling, Wittling, Merlan (roh);8.74
+287;Wels, Waller, Schaidfisch (roh);2.53
+288;Winterkabeljau, Skrei (roh);5.47
+289;Wolfsbarsch, Streifenbarsch, Loup de Mer (roh);5.72
+290;Zander (roh);0.88
+291;Büffelfleisch, Büffelsaftgulasch (roh);3.60
+292;Hammel/Lamm, Brust (Lammbrust, Lammfleisch) (roh);1.32
+293;Hammel/Lamm, Filets (Lammfilet, Lammfleisch) (roh);3.64
+294;Hammel/Lamm, Keule (Lammkeule, Lammfleisch) (roh);8.58
+295;Hammel/Lamm, Kotelett (Lammkoteletts, Lammfleisch) (roh);9.74
+296;Hammel/Lamm, Rücken (Lammrücken, Lammfleisch) (roh);1.73
+297;Hasenfleisch (roh);5.84
+298;Hirschfleisch (roh);5.58
+299;Kalbfleisch, Bries (Kalbsbries) (roh);9.41
+300;Kalbfleisch, Brust (Kalbsbrust) (roh);9.35
+301;Kalbfleisch, Filet (Kalbsfilets) (roh);4.61
+302;Kalbfleisch, Keule (roh);2.00
+303;Kalbfleisch, Leber (Kalbsleber) (roh);0.59
+304;Kalbfleisch, mager (roh);1.18
+305;Kalbfleisch, Niere (Kalbsnieren) (roh);0.92
+306;Kalbfleisch, Rücken (Kalbsrücken) (roh);8.01
+307;Kalbsschnitzel (roh);6.51
+308;Kaninchenfleisch (roh);8.39
+309;Kutteln, Kuddeln, Flecke, Kaldaunen (Streifen vom Rindervormagen, meist vom Pansen, in Frankreich auch von Netzmagen, Blättermagen, Labmagen/Käsemagen) (roh);0.24
+310;Pferdefleisch (roh);7.10
+311;Rehfleisch, Keule, Rehkeule (roh);9.89
+312;Rehfleisch, Rücken, Rehrücken (roh);6.57
+313;Rinderbeinscheibe (roh);8.20
+314;Rinderhackfleisch und Schweinehackfleisch, Hackfleisch gemischt (Gehacktes, Hackepeter, Thüringer Mett, Faschiertes, Haschee, Schabefleisch) (roh);7.75
+315;Rindermark, Rinderknochenmark (roh);5.98
+316;Rindfleisch, Filet (Rinderfilet, Rindsfilet, Filetsteak, Beefsteak, Rinderhüftsteak) (roh);3.91
+317;Rindfleisch, Hackfleisch (Rinderhackfleisch, Gehacktes, Hackepeter, Rindermett, Faschiertes, Haschee, Rindergehacktes, Schabefleisch) (roh);6.88
+318;Rindfleisch, Hochrippe (roh);5.42
+319;Rindfleisch, Leber (Rinderleber) (roh);0.15
+320;Rindfleisch, mager (roh);2.18
+321;Lebensmittel-Nährwerte (pro 100 g);2.73
+322;Rindfleisch, mittelfett (z. B. Ribeye) (roh);2.94
+323;Rindfleisch, Nieren (Rindernieren) (roh);5.90
+324;Rindfleisch, Roastbeef (Beefsteak oder Entrecôte) (roh);1.66
+325;Rindfleisch, Tafelspitz (roh);6.08
+326;Rindfleisch, Tartar (roh);9.02
+327;Rindfleisch, Zunge (Rinderzunge) (roh);8.46
+328;Schinkenspeck, Schinkenspeckwürfel, Frühstücksspeck, Frühstücksschinken (vom Schwein) (roh);1.43
+329;Schweinebauch, Bauchfleisch, Bauchspeck, Wammerl, Wellfleisch, durchwachsener Speck (roh);8.25
+330;Schweinefilets, Schweinelenden, Schweinemedaillons, Schweinefiletsteaks, Schweinelendchen (roh);1.68
+331;Schweinefleisch, mager (roh);4.96
+332;Schweinefleisch, mittelfett (roh);8.10
+333;Schweinehackfleisch (Schweinehack, Schweinegehacktes, Hackepeter, Thüringer Mett, Schweinemett, Faschiertes, Haschee, Schabefleisch) (roh);2.72
+334;Schweinehaxen, Eisbein (Schweinshaxe) (roh);3.25
+335;Schweinekamm, Kammfleisch, Hals, Schweinenacken, Nackensteak, Nackenbraten (roh);6.44
+336;Schweinekoteletts, Schweinskoteletts (roh);3.09
+337;Schweineleber (Schweinsleber) (roh);1.20
+338;Schweinenieren (Schweinsnieren) (roh);7.24
+339;Schweineschnitzel (roh);6.30
+340;Schweinespeck (roh);3.80
+341;Schweinezunge, Schweinszunge (roh);6.64
+342;Wildschweinfleisch (roh);0.30
+343;Ziegenfleisch (roh);1.64
+344;Allgäuer Käsespatzen;1.24
+345;Cannelloni mit Käse;8.57
+346;Farfalle;6.87
+347;Gemüse-Lasagne, Gemüselasagne;4.89
+348;Käsespätzle, Kässpätzle, Käsespätzele;8.72
+349;Lasagne Bolognese;2.31
+350;Lasagne;3.32
+351;Maultaschen, schwäbische;8.62
+352;Nudelauflauf mit Käse;6.80
+353;Nudelauflauf mit Schinken und Käse;1.94
+354;Pasta asciutta;5.04
+355;Pelmeni mit Fleisch (russische Teigtaschen, ravioli- oder maultaschenähnlich, gekocht);4.39
+356;Piroggen mit Gehacktesfüllung;7.32
+357;Ravioli mit Tomatensoße;7.49
+358;Schinkennudeln, schinkenfleckerln;9.67
+359;Schlutzkrapfen, schlutzer, Schlickkrapfen, Schlierkrapfen, Schlipfkrapfen mit Spinatfüllung;8.36
+360;Spaghetti Bolognese;4.04
+361;Spaghetti carbonara;1.17
+362;Spaghetti mit Tomatensoße, Nudeln mit Tomatensoße;0.25
+363;Tortellini;3.72
+364;Tortelloni (= größere Tortellini);6.48
+365;Wantan, Wan Tan, Wan-Tan, Huntun (chinesisch);6.31
+366;Adzukibohnensprossen;7.39
+367;Alfalfasprossen (Luzerne, Schneckenklee, Ewiger Klee);2.99
+368;Amaranthsprossen;2.41
+369;Artischocken;1.84
+370;Artischockenböden (Konserve);9.87
+371;Auberginen, Melanzani, Melanzane;3.60
+372;Bambussprossen (Konserve);2.43
+373;Bambussprossen;6.04
+374;Bärlauch, frisch;2.37
+375;Bataviasalat, roter Kopfsalat, Crisp-Salat;9.65
+376;Bayerisch Kraut, Dämpfkraut (Weißkohl, Butter, Zucker);3.73
+377;Bleichsellerie, Staudensellerie, Stielsellerie, Stangensellerie;9.07
+378;Blumenkohl, Karfiol, Korfiol (stark basisch wirkend);0.20
+379;Bochkshornkleesprossen;9.54
+380;Bohnensprossen;4.47
+381;Brennesseln;9.08
+382;Broccoli (Brokkoli);8.66
+383;Brunnenkresse;3.93
+384;Chicorée;6.02
+385;Chili-Schoten, grün oder rot;3.48
+386;Chinakohl;3.77
+387;Datteltomaten, Dattel-Tomaten, Cocktail-Tomaten;8.43
+388;Eisbergsalat;5.30
+389;Endivien, Frisée (basisch wirkend);5.92
+390;Essiggurken, Saure Gurken, Salzgurken, Gewürzgurken, Dillgurken, Fassgurken, (ohne Zuckerzusatz!);1.98
+391;Feldsalat, Nüsschensalat, Ackersalat, Vogerlsalat, Mäuseöhrchensalat, Rapunzelsalat, Nüsslisalat, Nüsslersalat, Sonnenwirbel (stark basisch wirkend);4.00
+392;Fenchel;8.29
+393;Frühlingszwiebeln;7.79
+394;Gänseblümchen;7.86
+395;Gartensalat (Kopfsalat, Grüner Salat, Buttersalat, Butterkopfsalat, Häuptlesalat, Lattich, Schmalzsalat, stark basisch wirkend);5.02
+396;Lebensmittel-Nährwerte (pro 100 g);0.30
+397;Gelbe Tomaten;4.96
+398;Gröstl, Gröstel, Röstgemüse;4.10
+399;Grüner Spargel, Grünspargel (= geschossener Weißspargel);4.18
+400;Grünkohl, Braunkohl, Federkohl;6.96
+401;Gurken (Salatgurken, Schlangengurken, stark basisch wirkend);6.05
+402;Gurken, Cornichons;9.15
+403;Gurkenschiffchen, geschmort (ohne Füllung);7.20
+404;Hokkaido-Kürbis, Butternuss-Kürbis, Butternut-Kürbis;2.15
+405;Ingwer;3.87
+406;Jalapeño, Jalapenios, Jalapenas (kleine Paprikaschoten, Paprika-Schoten, Peperoni, Chili);1.18
+407;Japanknollen, Japankartoffeln, Knollen-Ziest, Chinesische Artischocken, Japanische Kartoffeln, Knollenkartoffeln, Stachys (unverarbeitet);6.55
+408;Kaisergemüse (Mischung aus Brokkoli, Blumenkohl, Karotten);6.09
+409;Keimsprossen (Durchschnittswerte für Braunhirsesprossen, Gerstensprossen, Koriandersamensprossen, Leinsamensprossen, Rettichsprossen usw.);0.76
+410;Kichererbsen-Bällchen (Falafel);3.08
+411;Kirschtomaten, Cherry-Tomaten, Cocktail-Tomaten;2.59
+412;Knoblauch (Knoblauchzehen), frisch;7.25
+413;Knollenkerbel, Kerbelrübe, knolliger Kälberkropf, knolliger Kerbel, Rübenkerbel, Rüben-Kälberkropf, Erdkastanie, frisch;3.19
+414;Knollenkerbel, Kerbelrübe, knolliger Kälberkropf, knolliger Kerbel, Rübenkerbel, Rüben-Kälberkropf, Erdkastanie, getrocknet;5.87
+415;Knollensellerie (stark basisch wirkend);7.67
+416;Knollensellerie, Sauerkonserve;1.79
+417;Kohlrabi, Oberrübe, Rübkohl, Kohlraben;3.18
+418;Kürbis;6.83
+419;Lauch;2.31
+420;Lauchzwiebeln, frisch;9.86
+421;Leipziger Allerlei;6.40
+422;Lollo bionda, Lollo bianco, grüner Lollo;4.01
+423;Lotuswurzel (roh);5.18
+424;Löwenzahnblätter (stark basisch wirkend);1.11
+425;Maiskölbchen, Sauerkonserve;6.44
+426;Maiskolben;2.46
+427;Mangold, Blattmangold, Schnittmangold, Rippenmangold, Stielmangold, Krautstiel, Rübstiel;2.07
+428;Meerrettich, Kren, frisch gerieben;0.95
+429;Melde, Gartenmelde (spanischer Spinat);4.70
+430;Mini-Paprika, Snack-Paprika (Paprikaschoten, Paprika-Schoten);0.55
+431;Mixed Pickles (Sauerkonserve);7.13
+432;Möhren (Karotten, Mohrrüben, gelbe Rüben, Rübli, Rüebli, Fingermöhren);3.63
+433;Möhren (Konserve) (Karotten, Mohrrüben, gelbe Rüben, Fingermöhren);0.99
+434;Möhren und Erbsen 50:50 (Konserve) (Karotten, Mohrrüben, gelbe Rüben);2.49
+435;Möhren, Sauerkonserve (Karotten, Mohrrüben, gelbe Rüben, Rübli, Rüebli, Fingermöhren);6.50
+436;Möhrensalat, Karottensalat;8.00
+437;Absinth (Kräuterschnaps, Wermutschnaps) 70 Vol.%;5.67
+438;Alsterwasser, Radler;4.66
+439;Altbier, Alt-Bier;1.94
+440;Anislikör 40 Vol.%;2.34
+441;Apfelschnaps, saurer 20 Vol.%;5.10
+442;Apfelwein Apfelmost, Cidre, Cider, Sidra, Sidre;4.02
+443;Arrak;9.93
+444;Äthanol, Ethanol, reiner Alkohol, Reinsprit 98 Vol.%;2.57
+445;Bärwurzschnaps, 40 Vol.%;4.56
+446;Berliner Weiße mit Schuss (Waldmeister, Himbeer);0.35
+447;Bier, dunkel (Dunkelbier, dunkles Bier);3.06
+448;Bier, Export (Exportbier);9.45
+449;Bier, Pils, alkoholarm (Leichtbier);2.67
+450;Bier, Pils, hell;9.29
+451;Blutwurzschnaps, Tormentillschnaps, 40 Vol.%;1.05
+452;Caipirinha (Mixgetränke, ca. 18 Vol.% Alkohol, 1 Drink = 300 ml = etwa 1000kcal);2.97
+453;Cuba Libre (Mixgetränke, ca. 9 Vol.% Alkohol, 1 Drink = 230 ml = etwa 225kcal);3.39
+454;Dampfbier (obergärig, aber ähnlich Exportbier);0.37
+455;"Diätbier, ""Diabetiker-Bier""";4.57
+456;Doppelbock-Bier, Doppelbockbier, Starkbier;7.86
+457;Eier-Punsch, Eierpunsch;5.30
+458;Eierlikör 20 Vol.%;1.44
+459;Enzianschnaps, 40 Vol.%;7.90
+460;Federweißer;3.73
+461;Feigenlikör 20 Vol.%;3.15
+462;Feuerzangenbowle 12 Vol.%;3.10
+463;Fruchtsaftlikör;1.42
+464;Fruchtwein, lieblich (Erdbeerwein, Pfirsichwein, Heidelbeerwein usw.);4.87
+465;Lebensmittel-Nährwerte (pro 100 g);9.83
+466;Fruchtwein, trocken (Erdbeerwein, Pfirsichwein, Heidelbeerwein usw.);1.10
+467;Genever;9.04
+468;Gin;1.24
+469;Glühwein;8.43
+470;Grappa 40 Vol.%;0.30
+471;Grog (heißes Wasser, Kandis, Rum);5.20
+472;Honigwein, Honigmet, Honig-Met;2.58
+473;Jagertee;0.37
+474;Klarer, Korn, Kornbrand, Schnaps 32 Vol.%;3.98
+475;Klarer, Korn, Kornbrand, Schnaps, Doppelkorn 38 Vol.%;5.08
+476;Kölsch-Bier 4,9 Vol.%;4.45
+477;Kräuterlikör, Bitterlikör;6.76
+478;Kwas, Kwass, Quas, Kwaß, ca. 1,5 Vol.% Alkohol (Getränk in Osteuropa);0.19
+479;Lambrusco, ca. 10,5 Vol.% Alkohol;0.90
+480;Likörwein, Wermutwein, Vermouth;5.76
+481;Madeirawein, Madeira-Wein, 20 Vol.% (enthält generell Weinbrand!);2.23
+482;Mai Tai (Maitai, Mixgetränke, ca. 9 Vol.% Alkohol, 1 Drink = 300 ml = etwa 270kcal);6.94
+483;Mandelsirup, Orgeat, Orzata (30 Vol.% Alkohol)(;9.75
+484;Martini dry (Mixgetränke, 72% Gin + 9% Wermuth + 19% Olive, ca. 30 Vol.% Alkohol, 1 Drink = 45 ml + 1 Olive = etwa 162kcal);0.05
+485;Obstbrand, Obstler, Himbeergeist, Kirschwasser;2.77
+486;Orangenlikör (wie Cointreau, Grand Marnier, Curacao);2.90
+487;Ouzo, Raki, Anisschnaps 38 Vol.%;5.82
+488;Perlwein 9 Vol.%;0.23
+489;Pfefferminzlikör 20 Vol.%;2.07
+490;"Pflaumenwein, Umeshu (eigentlich kein ""Wein"")";8.26
+491;Portwein;2.59
+492;Punsch;5.59
+493;Reiswein, Sake;0.58
+494;Roter Sauser;0.03
+495;Rotwein, lieblich;7.06
+496;Rotwein, trocken;1.84
+497;Rum 40 Vol.%;7.27
+498;Rum 54 Vol.%;2.25
+499;Rumtopf;4.99
+500;Sahnelikör 20 Vol.%;8.26
+501;Sangria 10 Vol.%;4.60
+502;Schwarzbier, Schwarz-Bier;9.75
+503;Sekt, Champagner, Asti spumante, Schaumwein, Crémant, lieblich;0.40
+504;Sekt, Champagner, Prosecco, Schaumwein, Crémant, trocken;6.71
+505;Sherry, medium;9.71
+506;Lebensmittel-Nährwerte (pro 100 g);2.09
+507;Tequila 38 Vol.%;8.07
+508;Weihnachtspunsch;6.21
+509;Weinbrand, Cognac, Brandy, Metaxa;0.16
+510;Weißer Rum 40 Vol.%;7.50
+511;Weißherbst, Rosé;8.73
+512;Weißwein, Auslese;4.54
+513;Weißwein, halbtrocken;5.58
+514;Weißwein, lieblich;7.81
+515;Weißwein, trocken;9.06
+516;Weißweinschorle;9.83
+517;Weizenbier (Weiße, Weißbier, Hefeweizenbier, Hefeweißbier);1.68
+518;Wermut, süß;7.72
+519;Wermut, trocken;0.83
+520;Whisky, Whiskey, Scotch, Bourbon;9.20
+521;Wodka, Vodka;2.71
+522;Zuckerrohrschnaps, Cachaça 40 Vol.%;1.34
