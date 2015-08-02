@@ -1,6 +1,6 @@
 /*
-Created by Eckhardt, Meusel
-Responsible: Eckhardt, Meusel
+Created by Eckardt, Meusel
+Responsible: Eckardt, Meusel, Luis
 provides all needed functions for handling files
 */
 

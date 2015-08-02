@@ -45,9 +45,9 @@ void ArtikelSuche (TArticle MeineArtikel[])
 	{ 
 		if ((MeineArtikel[i].id == ArtikelNummer && ArtikelNummer != 0) || (MeineArtikel[i].name == ArtikelName && ArtikelName != "") || (MeineArtikel[i].price == ArtikelPreis  && ArtikelPreis != 0))
 		{
-      std::cout << "Articel Number: " << MeineArtikel[i].id << std::endl;
-      std::cout << "Articel Name:   " <<MeineArtikel[i].name << std::endl;
-      std::cout << "Articel Price:  " << MeineArtikel[i].price << "Euro" << std::endl;
+      std::cout << "Article Number: " << MeineArtikel[i].id << std::endl;
+      std::cout << "Article Name:   " <<MeineArtikel[i].name << std::endl;
+      std::cout << "Article Price:  " << MeineArtikel[i].price << "Euro" << std::endl;
 		}
 	}
 }
